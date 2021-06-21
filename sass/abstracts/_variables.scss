@@ -1,0 +1,41 @@
+// Color-map
+$clr: (
+  "whity": #ffffff,
+  "peach": #f4f9e2,
+  "pink": #ffe2de,
+  "salad": #c4e769,
+  "blue": #0052c1,
+  "purple": #8f00ff,
+  "ghost": #dee1ff,
+  "sky": #62d0df,
+  "dark-blue": #22356f,
+  "orange": #f9b640,
+  "sand": #e9b730,
+);
+
+// Fonts
+$main-font: "Open Sans", sans-serif;
+// Transition
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// Transform
+$transform-effect: scale(1.1, 1.2);
+// Font-size
+$font-standard-size: 1rem;
+// Font-weight
+$thin-font-weight: 100;
+$light-font-weight: 300;
+$regular-font-weight: 400;
+$medium-font-weight: 500;
+$bold-font-weight: 700;
+$black-font-weight: 900;
+// Letter-spacing
+$base-letter-spacing: 0.03em;
+$pixel-letter-spacing: 1.08;
+// Line-height
+$base-line-height: 1.2;
+$secondary-line-height: 1.71;
+$additional-line-height: 1.5;
+// Layout-width
+$fullLayoutWidth: 1440px;
+$sidePadding: 180px * 2;

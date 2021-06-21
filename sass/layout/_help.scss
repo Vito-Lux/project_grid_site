@@ -1,0 +1,65 @@
+.help {
+  background-color: clr(whity);
+}
+
+.help__title {
+  @include flexType(f, c, c);
+  margin-bottom: em(24);
+  @include fontLineWeightLetter(16, 18, thin, db);
+}
+
+.help-list {
+  @include listFlexGap(0);
+}
+
+.help-list__item {
+  position: relative;
+  @include itemFlexGap(0, 4);
+  padding: em(90) em(50) em(160) em(50);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: em(100);
+    left: em(30);
+    display: block;
+    height: em(8);
+    width: em(8);
+    border-radius: 50%;
+    background-color: clr(orange);
+  }
+}
+
+.help-list__item:nth-child(1) {
+  background-color: clr(pink);
+}
+
+.help-list__item:nth-child(2) {
+  background-color: clr(salad);
+}
+
+.help-list__item:nth-child(3) {
+  background-color: clr(sky);
+}
+
+.help-list__item:nth-child(4) {
+  background-color: clr(blue);
+}
+
+.help-list__title {
+  position: relative;
+  @include fontLineWeightLetter(32, 34, eb, neg);
+  color: clr(whity);
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: em(-10);
+    left: em(-10);
+    right: em(-6);
+    height: em(1);
+    width: auto;
+    background-color: clr(whity);
+  }
+}

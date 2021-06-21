@@ -1,0 +1,29 @@
+.after-hero {
+  padding-left: em(142);
+  background-color: clr(sky);
+}
+
+.after-hero-container {
+  @include flexType(f, sb, c);
+}
+
+.after-hero__title {
+  margin-bottom: em(36);
+  @include fontLineWeightLetter(36, 28, eb, neg);
+  color: clr(whity);
+}
+
+.after-hero__text {
+  width: calc(100% / 12 * 10);
+  @include fontLineWeightLetter(24, 36, eb, base);
+  color: clr(whity);
+}
+
+.after-hero__text > span {
+  @include fontLineWeightLetter(20, 28, norm, base);
+}
+
+.after-hero__img {
+  min-width: em(520);
+  min-height: em(600);
+}

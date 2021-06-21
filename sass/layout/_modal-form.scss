@@ -1,0 +1,80 @@
+.modal__form {
+  @include flexType(f, null, null, c);
+  background-image: url("../../images/hero_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal__title {
+  @include flexType(c, c, c);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  @include fontLineWeightLetter(32, 48, eb, base);
+  color: $main-text-color;
+  margin-bottom: 20px;
+}
+
+.modal__label {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  margin-bottom: 6px;
+  @include fontLineWeightLetter(12, 14, eb, base);
+  color: $main-text-color;
+}
+
+.modal__field {
+  @include flexType(f, null, null, c);
+  min-width: 448px;
+  min-height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  @include transitionRules();
+
+  &:hover,
+  &:focus {
+    background-color: $sec-text-color;
+    color: $main-bg-color;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    @include borderSolid(1, $main-bg-color);
+  }
+}
+
+.modal__field:hover + .modal__field-img,
+.modal__field:focus + .modal__field-img {
+  @include transitionRules(fill);
+  fill: $main-bg-color;
+}
+
+.modal__field-img {
+  position: absolute;
+  top: 39px;
+  left: 50px;
+}
+
+.modal__button {
+  @include flexType(f, c, c);
+  @extend .capabilities__button;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  background-color: $main-bg-color;
+  @include borderSolid(4, $sec-bg-color);
+  color: $sec-bg-color;
+  @include transitionRules();
+
+  &:hover,
+  &:focus {
+    background-color: $sec-text-color;
+    color: $main-bg-color;
+    @include borderSolid(4, $main-bg-color);
+  }
+}

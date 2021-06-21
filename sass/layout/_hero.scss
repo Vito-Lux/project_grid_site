@@ -1,0 +1,67 @@
+.hero {
+  background: linear-gradient(90deg, rgba(244, 249, 226, 1) 76%, rgba(255, 255, 255, 1) 76%);
+  z-index: -3;
+}
+
+.hero-container {
+  position: relative;
+  padding-left: em(142);
+  padding-bottom: em(100);
+  padding-top: em(100);
+  @include flexType(f, fs, fs, c);
+}
+
+.hero__subtext {
+  @extend .header-logo__text;
+  margin-bottom: em(30);
+}
+
+.hero__title {
+  width: calc(100% / 12 * 5);
+  margin-bottom: em(20);
+  @include fontLineWeightLetter(48, 54, eb, neg);
+}
+
+.hero__text {
+  width: calc(100% / 12 * 5);
+  margin-bottom: em(30);
+  @include fontLineWeightLetter(24, 42, bold, base);
+}
+
+.hero-list {
+  @include flexType(f, sb, c);
+}
+
+.hero__left-button {
+  @extend .header__button;
+  background-color: clr(orange);
+  border-radius: 0;
+  margin-right: em(40);
+}
+
+.hero__right-button {
+  @extend .header__button;
+  background-color: transparent;
+  color: clr(orange);
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background-color: clr(orange);
+    color: clr(whity);
+  }
+}
+
+.hero__img {
+  position: absolute;
+  top: em(-120);
+  right: 0;
+  z-index: 1;
+}
+
+.hero__img-bg {
+  position: absolute;
+  top: em(-158);
+  right: em(-16);
+  z-index: 0;
+}

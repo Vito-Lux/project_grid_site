@@ -1,0 +1,27 @@
+.about {
+  background-color: clr(whity);
+}
+
+.about-container {
+  @include flexType(f, fs, b);
+  padding-left: em(100);
+  padding-top: em(50);
+}
+
+.about__left-block {
+  width: calc(100% / 12 * 2);
+}
+
+.about__title {
+  @include fontLineWeightLetter(16, 22, norm, db);
+}
+
+.about__right-block {
+  @include flexType(f, c, c);
+  width: calc(100% / 12 * 8);
+}
+
+.about__text {
+  width: calc(100% / 12 * 11);
+  @include fontLineWeightLetter(24, 34, bold, db);
+}

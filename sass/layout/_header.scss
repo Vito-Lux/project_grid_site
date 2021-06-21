@@ -1,0 +1,64 @@
+.header {
+  padding-top: em(40);
+  padding-bottom: em(40);
+  @include flexType(f, sb, c);
+}
+
+.header-logo__text {
+  color: clr(sky);
+  @include fontLineWeightLetter(24, 26, bold, neg);
+}
+
+.header-nav__list {
+  @include flexType(f, c, c);
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: em(20);
+}
+
+.header-nav__item:last-child {
+  margin-right: 0;
+}
+
+.header-nav__link {
+  position: relative;
+  @include fontLineWeightLetter(14, 16, med, base);
+  color: clr(dark-blue);
+  z-index: 5;
+
+  &:hover,
+  &:focus {
+    font-weight: 900;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: em(36);
+      display: block;
+      background-color: clr(dark-blue);
+      box-shadow: clr(dark-blue);
+      height: em(3);
+      width: 100%;
+      border-radius: em(2);
+    }
+  }
+}
+
+.header__button {
+  @include flexType(f, c, c);
+  min-height: em(50);
+  min-width: em(150);
+  border-radius: em(50);
+  background-color: clr(sky);
+  color: clr(whity);
+  @include fontLineWeightLetter(14, 16, bold, base);
+  text-transform: uppercase;
+  z-index: 5;
+  @include transitionRules(transform);
+
+  &:hover,
+  &:focus {
+    transform: $transform-effect;
+  }
+}
