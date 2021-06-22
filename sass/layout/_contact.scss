@@ -1,0 +1,40 @@
+.contact {
+  max-width: em(1440);
+  background-color: clr(dark-blue);
+}
+
+.contact-container {
+  @include flexType(f, c, c, r);
+}
+
+.contact__left-block {
+  @include flexType(f, sa, fs, c);
+  min-height: em(640);
+  color: clr(whity);
+  padding-left: em(180);
+}
+
+.contact-block__title {
+  @include fontLineWeightLetter(16, 12, med, db);
+  margin-bottom: em(220);
+}
+
+.contact-block__text {
+  @include fontLineWeightLetter(64, 94, eb, neg);
+  margin-bottom: em(16);
+}
+
+.contact-block__subtext {
+  @include fontLineWeightLetter(36, 52, bold, neg);
+  width: calc(100% / 12 * 10);
+  margin-bottom: em(28);
+}
+
+.contact-block__button {
+  @extend .hero__right-button;
+}
+
+.contact__img {
+  min-width: em(480);
+  min-height: em(800);
+}

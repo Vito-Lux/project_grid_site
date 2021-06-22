@@ -1,0 +1,27 @@
+.sport-guide {
+  max-width: em(1440);
+  @include flexType(f, c, c);
+  background-color: clr(whity);
+  padding-left: em(76);
+  padding-right: em(76);
+}
+
+.sport-guide-list {
+  @include listFlexGap(170);
+  margin-top: 0;
+}
+
+.sport-guide-list__item {
+  @include itemFlexGap(170, 3);
+  margin-top: 0;
+}
+
+.sport-guide-list__title {
+  @include fontLineWeightLetter(28, 32, bold, neg);
+  margin-bottom: em(20);
+}
+
+.sport-guide-list__text {
+  @include fontLineWeightLetter(16, 26, med, neg);
+  margin-bottom: em(92);
+}

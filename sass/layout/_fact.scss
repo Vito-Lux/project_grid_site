@@ -1,0 +1,34 @@
+.fact {
+  max-width: em(1440);
+  background-color: clr(whity);
+}
+
+.fact-container {
+  @include flexType(f, c, c, r);
+}
+
+.fact-block {
+  flex: 0 1 50%;
+}
+
+.fact__right-block {
+  min-height: em(640);
+  @include flexType(f, sb, fs, c);
+}
+
+.fact-block__title {
+  @include fontLineWeightLetter(16, 12, med, db);
+}
+
+.fact-block__text {
+  @include fontLineWeightLetter(36, 52, bold, neg);
+  width: calc(100% / 12 * 11);
+}
+
+.fact-block__text > span {
+  color: clr(sky);
+}
+
+.fact-block__button {
+  @extend .hero__right-button;
+}

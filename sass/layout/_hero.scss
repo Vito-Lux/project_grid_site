@@ -1,4 +1,5 @@
 .hero {
+  max-width: em(1440);
   background: linear-gradient(90deg, rgba(244, 249, 226, 1) 76%, rgba(255, 255, 255, 1) 76%);
   z-index: -3;
 }
@@ -62,6 +63,6 @@
 .hero__img-bg {
   position: absolute;
   top: em(-158);
-  right: em(-16);
+  right: 0;
   z-index: 0;
 }

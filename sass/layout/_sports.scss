@@ -1,4 +1,5 @@
 .sports {
+  max-width: em(1440);
   background-color: clr(whity);
 }
 
@@ -27,11 +28,20 @@
   }
 }
 
+.sports-list__img {
+  transform: translateZ(-100%);
+  visibility: hidden;
+  opacity: 0;
+
+  @include transitionRules(visibility, opacity, transform);
+}
+
 .sports-list__item:hover .sports-list__img,
 .sports-list__item:focus .sports-list__img {
   visibility: visible;
   opacity: 1;
   cursor: pointer;
+  transform: translateZ(0);
 }
 
 .sports-list__item:nth-child(1) {
@@ -75,7 +85,7 @@
   }
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-}
+// .is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+// }

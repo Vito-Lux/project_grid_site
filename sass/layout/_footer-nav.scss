@@ -1,0 +1,70 @@
+.footer-nav {
+  max-width: em(1440);
+}
+
+.footer-nav-container {
+  @include flexType(f, sb, c, r);
+}
+
+.footer-nav-block {
+  flex: 0 1 50%;
+}
+
+.footer-nav__row {
+  @include flexType(null, c, fs, r);
+  @include listFlexGap(30);
+  margin-top: 0;
+}
+
+.right-block-col {
+  @include itemFlexGap(30, 3);
+  margin-top: 0;
+}
+
+.footer-nav__subtitle {
+  @include fontLineWeightLetter(14, 10, eb, neg);
+  margin-bottom: em(60);
+}
+
+.footer-nav__text {
+  @include fontLineWeightLetter(14, 22, thin, neg);
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.footer-nav__address {
+  @include fontLineWeightLetter(14, 22, thin, neg);
+  font-style: normal;
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.footer-nav__address-text {
+  width: calc(100% / 12 * 8);
+  margin-bottom: em(30);
+}
+
+.footer-nav-address-list__tel {
+  margin-bottom: em(6);
+}
+
+.footer-nav-address-list__email {
+  color: clr(blue);
+  @include transitionRules(font-size);
+
+  &:hover,
+  &:focus {
+    font-size: em(18);
+  }
+}
+
+.footer-nav-schedule-list__item {
+  margin-bottom: em(6);
+}
+
+.footer-nav-schedule-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav-schedule-list__text {
+  @include fontLineWeightLetter(14, 22, med, div);
+  color: rgba(34, 53, 111, 0.5);
+}

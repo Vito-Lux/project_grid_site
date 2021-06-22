@@ -1,7 +1,11 @@
 .header {
+  max-width: em(1440);
   padding-top: em(40);
   padding-bottom: em(40);
   @include flexType(f, sb, c);
+  padding-left: em(142);
+  padding-right: em(142);
+  background-color: clr(peach);
 }
 
 .header-logo__text {

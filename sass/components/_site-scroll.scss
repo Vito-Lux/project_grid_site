@@ -1,23 +1,23 @@
 // For :-moz
 
 body {
-  scrollbar-color: linear-gradient(180deg, #00c6fb, #005bea) #f9f9fd; /* «цвет ползунка» и «цвет полосы скроллбара» */
+  scrollbar-color: linear-gradient(100deg, clr(sky), clr(peach)) #f9f9fd; /* «цвет ползунка» и «цвет полосы скроллбара» */
   scrollbar-width: auto;
 }
 
 // For ::webkit
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: em(12);
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-  background-color: #f9f9fd;
-  border-radius: 10px;
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.4) inset;
+  background: linear-gradient(150deg, clr(peach), clr(blue));
+  border-radius: em(10);
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: linear-gradient(180deg, #00c6fb, #005bea);
+  border-radius: em(10);
+  background: linear-gradient(100deg, clr(sky), clr(peach));
 }
